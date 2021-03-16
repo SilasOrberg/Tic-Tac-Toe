@@ -1,0 +1,75 @@
+:root {
+    --body: #f1f3f8;
+    --font: #393b44;
+    --border: #666;
+}
+
+body {
+    background-color: var(--body);
+    color: var(--font);
+}
+
+#gameboard {
+    margin: 2rem auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    justify-content: center;
+}
+
+/* Want to make them squares */
+.field {
+    background-color: white;
+    border: 1px solid var(--border);
+}
+
+.hide {
+    display: none;
+}
+
+#title {
+    color:#111; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+#winning-player-header {
+    color: green; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#play-again-button {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #36ed30;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+#play-again-button:hover {
+    background: #005018;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 109, 9, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 109, 9, 0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+#winnerField {
+    text-align: center;
+}
